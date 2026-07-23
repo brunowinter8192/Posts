@@ -1,0 +1,10 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+import { BASE } from "@/utils/url";
+---
+
+<PageLayout meta={{ title: "Not Found" }}>
+	<h1 class="title mb-6">404</h1>
+	<p class="mb-4">Page not found.</p>
+	<a class="cactus-link" href={`${BASE}/`}>&larr; Back home</a>
+</PageLayout>

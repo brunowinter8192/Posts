@@ -4,6 +4,11 @@
 /*
 .DS_Store
 
+# always-ignored even under whitelisted dirs (build/install output)
+node_modules/
+dist/
+.astro/
+
 # --- infrastructure (always public) ---
 !/.gitignore
 
@@ -13,3 +18,20 @@
 !/articles/rag-eval/
 /articles/rag-eval/*
 !/articles/rag-eval/rageval-notes.md
+
+# --- Astro/Cactus site scaffold (public) ---
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/astro.config.mjs
+!/tailwind.config.ts
+!/LICENSE
+!/src/
+!/src/**
+!/public/
+!/public/**
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/deploy.yml

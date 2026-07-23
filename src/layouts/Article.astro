@@ -1,0 +1,26 @@
+---
+import BaseLayout from "@/layouts/Base.astro";
+import { BASE } from "@/utils/url";
+
+interface Props {
+	entry: { data: { title: string; section: string } };
+}
+
+const { entry } = Astro.props;
+---
+
+<BaseLayout meta={{ title: entry.data.title, description: entry.data.title }}>
+	<article class="grow break-words">
+		<div class="mb-12">
+			<a class="cactus-link text-muted text-sm" href={`${BASE}/${entry.data.section}/`}>
+				{entry.data.section}
+			</a>
+			<h1 class="title mt-2">{entry.data.title}</h1>
+		</div>
+		<div
+			class="prose prose-sm prose-headings:font-semibold prose-headings:text-accent-2 max-w-none"
+		>
+			<slot />
+		</div>
+	</article>
+</BaseLayout>

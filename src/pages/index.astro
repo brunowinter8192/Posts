@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Base.astro";
+import { siteConfig } from "@/site.config";
+import { BASE } from "@/utils/url";
+
+// Digital-garden landing: section list (folder under articles/ = section),
+// not a chronological post feed.
+const articles = await getCollection("article");
+const sections = [...new Set(articles.map((a) => a.data.section))].sort();
+const counts = new Map(sections.map((s) => [s, articles.filter((a) => a.data.section === s).length]));
+---
+
+<PageLayout meta={{ title: "Home", description: siteConfig.description }}>
+	<h1 class="title mb-12">{siteConfig.title}</h1>
+	<ul class="space-y-4" role="list">
+		{
+			sections.map((section) => (
+				<li>
+					<a class="cactus-link title text-lg" href={`${BASE}/${section}/`}>
+						{section}
+					</a>
+					<span class="text-muted">
+						{" "}
+						— {counts.get(section)} article{counts.get(section) === 1 ? "" : "s"}
+					</span>
+				</li>
+			))
+		}
+	</ul>
+</PageLayout>

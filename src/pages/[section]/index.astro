@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Base.astro";
+import { BASE } from "@/utils/url";
+
+export async function getStaticPaths() {
+	const articles = await getCollection("article");
+	const sections = [...new Set(articles.map((a) => a.data.section))];
+	return sections.map((section) => ({
+		params: { section },
+		props: { articles: articles.filter((a) => a.data.section === section) },
+	}));
+}
+
+const { section } = Astro.params;
+const { articles } = Astro.props;
+---
+
+<PageLayout meta={{ title: section }}>
+	<h1 class="title mb-12">{section}</h1>
+	<ul class="space-y-4" role="list">
+		{
+			articles.map((a) => (
+				<li>
+					<a class="cactus-link" href={`${BASE}/${section}/${a.id.split("/")[1]}/`}>
+						{a.data.title}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+	<a class="hover:text-link mt-12 block" href={`${BASE}/`}>&larr; All sections</a>
+</PageLayout>
