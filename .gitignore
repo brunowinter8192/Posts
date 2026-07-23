@@ -1,0 +1,15 @@
+# WHITELIST MODE — everything is private by default.
+# To publish an article, add an explicit un-ignore rule set for it below.
+
+/*
+.DS_Store
+
+# --- infrastructure (always public) ---
+!/.gitignore
+
+# --- published articles (explicit whitelist, one rule set per article) ---
+!/articles/
+/articles/*
+!/articles/rag-eval/
+/articles/rag-eval/*
+!/articles/rag-eval/rageval-notes.md
