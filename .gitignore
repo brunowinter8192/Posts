@@ -18,6 +18,9 @@ dist/
 !/articles/rag-eval/
 /articles/rag-eval/*
 !/articles/rag-eval/rageval-notes.md
+!/articles/doku-struktur/
+/articles/doku-struktur/*
+!/articles/doku-struktur/00-meta-prinzip-zwei-bereiche.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json
