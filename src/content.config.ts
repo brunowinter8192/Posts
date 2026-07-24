@@ -4,9 +4,10 @@ import type { Loader } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
 // articles/**/*.md lives at the repo root (not src/content/) and ships without
-// frontmatter. Folder under articles/ = section. Title has no source to derive
-// from (no frontmatter, no leading heading in the current corpus) — humanize the
-// filename instead: "rageval-notes.md" -> "Rageval Notes". Simple, always works.
+// frontmatter. Folder under articles/ = section. Title source: leading "# H1"
+// on the first non-empty line, if present (stripped from the body so it isn't
+// rendered twice — layout title + body H1). Otherwise humanize the filename:
+// "rageval-notes.md" -> "Rageval Notes".
 const ARTICLES_ROOT = path.resolve("articles");
 
 function titleFromFilename(filename: string): string {
@@ -15,6 +16,22 @@ function titleFromFilename(filename: string): string {
 		.split(/[-_]+/)
 		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
 		.join(" ");
+}
+
+// Extract a leading "# Heading" (first non-empty line) and return the title
+// plus the body with that line removed; null when no leading H1 is present.
+function extractLeadingH1(rawBody: string): { title: string; body: string } | null {
+	const lines = rawBody.split("\n");
+	const firstContentIndex = lines.findIndex((line) => line.trim() !== "");
+	if (firstContentIndex === -1) return null;
+
+	const match = lines[firstContentIndex].match(/^#\s+(.+?)\s*$/);
+	if (!match) return null;
+
+	const body = [...lines.slice(0, firstContentIndex), ...lines.slice(firstContentIndex + 1)].join(
+		"\n",
+	);
+	return { title: match[1], body };
 }
 
 const articlesLoader: Loader = {
@@ -35,12 +52,13 @@ const articlesLoader: Loader = {
 				const filePath = path.join(sectionPath, file);
 				const rawBody = fs.readFileSync(filePath, "utf-8");
 				const id = `${sectionDir.name}/${file.replace(/\.md$/, "")}`;
+				const h1 = extractLeadingH1(rawBody);
 
 				const data = await parseData({
 					id,
-					data: { title: titleFromFilename(file), section: sectionDir.name },
+					data: { title: h1?.title ?? titleFromFilename(file), section: sectionDir.name },
 				});
-				const rendered = await renderMarkdown(rawBody);
+				const rendered = await renderMarkdown(h1?.body ?? rawBody);
 
 				store.set({ id, data, body: rawBody, rendered, digest: generateDigest(rawBody) });
 			}

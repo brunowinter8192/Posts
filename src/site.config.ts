@@ -2,11 +2,11 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
 	url: "https://brunowinter8192.github.io/Posts/",
-	title: "Bruno Winter — Working Notes",
+	title: "Reinschrift",
 	author: "Bruno Winter",
-	description: "Working notes, organized as project sections.",
-	lang: "en",
-	ogLocale: "en_US",
+	description: "Reinschrift — Projektnotizen in sauberer Fassung.",
+	lang: "de",
+	ogLocale: "de_DE",
 	showLogo: false,
 };
 

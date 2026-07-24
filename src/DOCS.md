@@ -8,9 +8,9 @@ Root of the Astro site (project itself lives at repo root, colocated with `artic
 
 ## Modules
 
-### content.config.ts (57 LOC)
+### content.config.ts (75 LOC)
 
-**Purpose:** defines the `article` content collection via a custom loader that reads `articles/<section>/*.md` from the repo root (not `src/content/`) and derives `title`/`section` since the source files ship without frontmatter.
+**Purpose:** defines the `article` content collection via a custom loader that reads `articles/<section>/*.md` from the repo root (not `src/content/`) and derives `title`/`section` since the source files ship without frontmatter — title comes from a leading `# H1` (first non-empty line) when present, else humanized filename; the H1 line is stripped from the body passed to `renderMarkdown` so it doesn't render twice.
 **Reads:** filesystem — `articles/**/*.md` at repo root (`path.resolve("articles")`).
 **Writes:** Astro content store (`store.set`) consumed by `astro:content` APIs.
 **Called by:** `src/pages/index.astro`, `src/pages/[section]/index.astro`, `src/pages/[section]/[article].astro`.
@@ -46,6 +46,6 @@ Root of the Astro site (project itself lives at repo root, colocated with `artic
 `content.config.ts`'s loader owns the `article` collection store; rebuilt on every `astro build`/`astro dev` sync, not persisted or mutated elsewhere.
 
 ## Gotchas
-- Title has no real source (no frontmatter, no leading `#` heading in the current corpus) — derived by humanizing the filename (`rageval-notes.md` → "Rageval Notes"). Adding a file with a misleading filename ships a misleading title; there is no override mechanism.
+- Title source: leading `# Heading` on the first non-empty line (`extractLeadingH1`), else humanized filename (`rageval-notes.md` → "Rageval Notes"). A file with neither a leading H1 nor a descriptive filename ships a misleading title; there is no frontmatter override. `##`+ (any level other than exactly one `#`) does NOT count as the leading H1 and falls through to the filename fallback.
 - `id` = `${section}/${filename-without-.md}` — this is the routing key `src/pages/[section]/[article].astro` splits on `"/"`. Renaming a section folder or file changes the URL.
 - Loader path is `path.resolve("articles")`, i.e. relative to the process cwd at build time — must be invoked with the repo root as cwd (true for `npm run build`/`astro dev` from repo root; would break if invoked from elsewhere).
