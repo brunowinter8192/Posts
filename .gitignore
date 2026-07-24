@@ -18,9 +18,9 @@ dist/
 !/articles/rag-eval/
 /articles/rag-eval/*
 !/articles/rag-eval/rageval-notes.md
-!/articles/doku-struktur/
-/articles/doku-struktur/*
-!/articles/doku-struktur/00-meta-prinzip-zwei-bereiche.md
+!/articles/projektstruktur/
+/articles/projektstruktur/*
+!/articles/projektstruktur/00-arten-von-projekten.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json

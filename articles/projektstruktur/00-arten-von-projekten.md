@@ -1,4 +1,4 @@
-# Doku-Struktur #0 — Das Meta-Prinzip der zwei Bereiche
+# Arten von Projekten
 
 Wenn ich privat mit KI arbeite, dann kenne ich zwei Arten von Projekten. Das eine sind Projekte, wo es mir nur auf die Ergebnisse ankommt, die ich sehen kann. Also ob das, was ich mir vorstelle, funktional passt, kann ich direkt visuell prüfen, oder indem ich die gewünschte Funktion probiere. Das sind eher einfache Projekte, da es auch in meinem Ermessensspielraum liegt, ob ich sage, das funktioniert so, wie ich es mir vorstelle, das ist oft eine gewisse Range. Bei der zweiten Art von Projekt gibt es keinen Ermessensspielraum, in dem ich sagen kann, diese Funktion passt mir so oder sie passt mir nicht, hier ist die Funktionalität entweder korrekt oder nicht korrekt.
 
