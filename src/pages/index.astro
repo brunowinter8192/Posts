@@ -12,7 +12,7 @@ const counts = new Map(sections.map((s) => [s, articles.filter((a) => a.data.sec
 ---
 
 <PageLayout meta={{ title: "Home", description: siteConfig.description }}>
-	<h1 class="title mb-12">{siteConfig.title}</h1>
+	<h1 class="title mb-12">{siteConfig.description}</h1>
 	<ul class="space-y-4" role="list">
 		{
 			sections.map((section) => (
