@@ -15,9 +15,6 @@ dist/
 # --- published articles (explicit whitelist, one rule set per article) ---
 !/articles/
 /articles/*
-!/articles/rag-eval/
-/articles/rag-eval/*
-!/articles/rag-eval/rageval-notes.md
 !/articles/projektstruktur/
 /articles/projektstruktur/*
 !/articles/projektstruktur/00-arten-von-projekten.md
