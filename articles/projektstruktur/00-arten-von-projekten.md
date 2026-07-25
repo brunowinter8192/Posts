@@ -14,6 +14,6 @@ Meine Faustregel lautet also, habe ich keinen Ermessensspielraum, dann verifizie
 
 Die Fragen, die sich ergeben, sind:
 
-- Wie strukturiere ich dann ein Projekt in der Praxis, wie sieht eine Ordnerstruktur tatsächlich aus?
+- [Wie strukturiere ich dann ein Projekt in der Praxis, wie sieht eine Ordnerstruktur tatsächlich aus?](https://brunowinter8192.github.io/Posts/projektstruktur/01-ordnerstruktur/)
 - Welche Regeln gibt es, damit die Bestandteile Code und Docs in einer einheitlichen Form geschrieben werden?
 - Wie kann der Agent schnellstmöglich und tokensparendst den Stand eines spezifischen Arbeitsschritts innerhalb eines Projekts abrufen?

@@ -18,6 +18,7 @@ dist/
 !/articles/projektstruktur/
 /articles/projektstruktur/*
 !/articles/projektstruktur/00-arten-von-projekten.md
+!/articles/projektstruktur/01-ordnerstruktur.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json
