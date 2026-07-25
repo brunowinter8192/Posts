@@ -39,28 +39,7 @@ Geteilt wird dev wieder in Areas, und die richten sich nach der Prozessdoku. Wo 
 
 ## src
 
-Bleibt der source Bereich, und der ist ehrlicherweise kaum meine Domäne, den Code liest und schreibt bei mir die KI. Die Trennung in Ordner überlasse ich dem Agent, sie folgt aber Regeln. Der Code gruppiert sich in Themenordner. Direkt im Source-Root darf eine Datei nur liegen, wenn mindestens zwei Themenordner sie brauchen oder ein externer Einstiegspunkt sie direkt lädt, alles andere wandert in seinen Themenordner. In jedem Themenordner liegt eine DOCS.md, die die Module genau dieses Ordners beschreibt, also Zweck, was ein Modul liest und schreibt, wer es aufruft, wovon es abhängt. Anders als die Prozessdoku wird diese Datei laufend aktualisiert, sie beschreibt immer den aktuellen Code. So sieht das in meinem Monitoring-Projekt aus.
-
-```
-monitor-cc/
-├── src/
-│   ├── constants.py
-│   ├── utils.py
-│   ├── core/
-│   │   ├── DOCS.md
-│   │   ├── monitor.py
-│   │   └── ...
-│   ├── proxy/
-│   │   ├── DOCS.md
-│   │   └── ...
-│   └── ...
-├── dev/
-│   ├── rag_helpfulness/
-│   └── ...
-└── process-docs/
-    ├── rag_helpfulness/
-    └── ...
-```
+Bleibt der source Bereich, und der ist ehrlicherweise kaum meine Domäne, den Code liest und schreibt bei mir die KI. Die Trennung in Ordner überlasse ich dem Agent, sie folgt aber Regeln. Der Code gruppiert sich in Themenordner. Direkt im Source-Root darf eine Datei nur liegen, wenn mindestens zwei Themenordner sie brauchen oder ein externer Einstiegspunkt sie direkt lädt, alles andere wandert in seinen Themenordner. In jedem Themenordner liegt eine DOCS.md, die die Module genau dieses Ordners beschreibt, also Zweck, was ein Modul liest und schreibt, wer es aufruft, wovon es abhängt. Anders als die Prozessdoku wird diese Datei laufend aktualisiert, sie beschreibt immer den aktuellen Code.
 
 ## Maintenance
 
