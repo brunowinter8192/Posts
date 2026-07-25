@@ -29,7 +29,7 @@ Für das Weiterführen einer bestehenden Area gilt das Gegenstück, hier brauche
 - Ist das Fundament dieser Area im Wesentlichen das Fundament genau dieser Erweiterung und keiner anderen?
 - Stützt sich die Arbeit allein auf diese eine Area?
 
-Die Hürde für eine neue Area liegt damit niedriger als für das Weiterführen einer bestehenden. Das ist gewollt. Man neigt generell dazu, alles zusammenzuwerfen, und genau diesen Fall will ich verhindern, deshalb ist die Hürde für das Weiterführen die höhere.
+Die Hürde für eine neue Area liegt damit niedriger als für das Weiterführen einer bestehenden. Das ist gewollt. Man neigt generell dazu, alles zusammenzuwerfen, und genau diesen Fall will ich verhindern.
 
 ## dev
 
