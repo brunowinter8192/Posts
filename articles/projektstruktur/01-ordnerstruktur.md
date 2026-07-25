@@ -43,8 +43,8 @@ Was den Code angeht, entscheidet der Agent die Einteilung in Ordner, es gibt kei
 
 ## Maintenance
 
-Rules zur Struktur sind gut, sie zu maintainen ist der Schlüssel. Das war für mich das wichtigste Learning an der ganzen Sache. Rules, die etwas Permanentes auf der Platte hinterlassen und nicht in harte Hooks gebunden sind, werden nicht immer ad hoc befolgt, irgendwas rutscht immer durch. Es ist deshalb schlicht notwendig, die Struktur von Zeit zu Zeit zu prüfen. Bei mir läuft das über wiederverwendbare Skills, die ich in periodischen Abständen ausführe. Ein Skill scannt dann etwa die Platzierung und Größe der Module gegen die festen Regeln und was abweicht, wird nachgezogen.
+Rules zur Struktur sind gut, sie zu maintainen ist aber Pflicht. Das war für mich das wichtigste Learning an der ganzen Sache. Irgendwas rutscht immer durch, vor allem Regeln, die sich auf Struktur beziehen, sind berüchtigt dafür, ad hoc nicht eingehalten zu werden. Es ist deshalb schlicht notwendig, die Struktur von Zeit zu Zeit zu prüfen. Bei mir läuft das über wiederverwendbare Skills, die ich in periodischen Abständen ausführe.
 
 Die Frage, die sich ergibt, ist:
 
-- Wenn dieses System über Sessions gewachsen ist, wie finde ich dann in jeder neuen Session schnell einen Einstieg?
+- Die Ordnerstruktur ist klar, aber wie finde ich jetzt zu Beginn jeder Session den Einstieg?
