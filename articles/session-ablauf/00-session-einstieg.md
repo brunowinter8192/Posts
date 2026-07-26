@@ -4,9 +4,9 @@
 
 ## Rahmen für den Einstieg
 
-Generell lautet mein Ziel jeder Session Konsistenz. Bei LLMs kann ich nur den Rahmen stecken, und da spielen vor allem die Rules, die man als System Prompt einpflegt, die größte Rolle. Mir geht es darum, dass mir der Anfang einer Session bekannt vorkommt, egal welches Modell ich nutze, weil ich mich so an Arbeitsabläufe gewöhnen kann und Informationen schneller verarbeite.
+Generell lautet mein Ziel jeder Session Konsistenz. Bei LLMs kann ich nur den Rahmen stecken, und da spielen vor allem die Rules, die man als System Prompt einpflegt, die größte Rolle. Mir geht es darum, dass mir der Anfang einer Session bekannt vorkommt, der Ablauf, egal welches Modell ich nutze.
 
-Als Zweites geht es bei mir zu Beginn einer Session vor allem immer um schnelle Informationsbeschaffung. Für bereits angefangene Arbeit fand ich Tracking mit GitHub Issues komplett ausreichend. Wobei die Issues bei mir nur einfache Pointer auf den Prozess sind, sie zeigen auf die Area und beinhalten eine RAG query, mit der ich sofort die Arbeit aufnehmen kann. Werden sie geschlossen, bleibt die History bestehen.
+Als Zweites geht es bei mir zu Beginn einer Session vor allem immer um schnelle Informationsbeschaffung. Für bereits angefangene Arbeit fand ich Tracking mit GitHub Issues komplett ausreichend. Wobei die Issues bei mir nur einfache Pointer auf den Prozess sind, sie zeigen auf die Area der process-docs und beinhalten eine RAG query, mit der ich sofort die Arbeit aufnehmen kann. Werden sie geschlossen, bleibt die History bestehen.
 
 ## Einstieg Ablauf
 
