@@ -19,6 +19,9 @@ dist/
 /articles/projektstruktur/*
 !/articles/projektstruktur/00-arten-von-projekten.md
 !/articles/projektstruktur/01-ordnerstruktur.md
+!/articles/session-ablauf/
+/articles/session-ablauf/*
+!/articles/session-ablauf/00-session-einstieg.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json

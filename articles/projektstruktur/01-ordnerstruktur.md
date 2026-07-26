@@ -47,4 +47,4 @@ Rules zur Struktur sind gut, sie zu maintainen ist aber Pflicht. Das war für mi
 
 Die Frage, die sich ergibt, ist:
 
-- Die Ordnerstruktur ist klar, aber wie finde ich jetzt zu Beginn jeder Session den Einstieg?
+- [Die Ordnerstruktur ist klar, aber wie finde ich jetzt zu Beginn jeder Session den Einstieg?](https://brunowinter8192.github.io/Posts/session-ablauf/00-session-einstieg/)
