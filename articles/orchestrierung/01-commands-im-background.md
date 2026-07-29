@@ -1,7 +1,5 @@
 # Übergänge zwischen Foreground und Background
 
-[Am Ende des letzten Teils stand die Frage, wie man mit den Herausforderungen bei der attention und im Context Management während der Orchestrierung umgeht.](https://brunowinter8192.github.io/Posts/orchestrierung/00-foreground-background-prozesse/)
-
 In diesem Artikel soll es noch einmal tiefer in die Ebenen von Prozessen gehen. Ich betrachte im folgenden die 2 bereits angerissenen Ebenen foreground und background. Ein tool call begründet einen solchen Prozess. Ziel des Artikels ist es tiefer in die Übergänge zwischen den Ebenen einzusteigen und darzulegen welche Mittel ich nutze um diese Ebenenwechsel in eine einheitliche Form zu bringen.
 
 ## Foreground zu background
