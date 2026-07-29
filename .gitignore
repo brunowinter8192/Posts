@@ -24,7 +24,7 @@ dist/
 !/articles/session-ablauf/00-session-einstieg.md
 !/articles/orchestrierung/
 /articles/orchestrierung/*
-!/articles/orchestrierung/00-grundmechanik.md
+!/articles/orchestrierung/00-foreground-background-prozesse.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json
