@@ -59,4 +59,6 @@ Während so ein gespawnter Agent läuft, ist der Main Agent grundsätzlich idle.
 
 Das ist also backgrounding by choice. Die beiden Herausforderungen, attention und Context Management, bleiben damit bestehen, es gilt Wege zu finden in der Orchestrierung damit umzugehen.
 
-Es ergibt sich die Frage, wie man mit den Herausforderungen bei der attention und im Context Management während der Orchestrierung umgeht.
+Die Frage, die sich ergibt, ist:
+
+- [Wie geht man mit den Herausforderungen bei der attention und im Context Management während der Orchestrierung um?](https://brunowinter8192.github.io/Posts/orchestrierung/01-commands-im-background/)

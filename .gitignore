@@ -25,6 +25,7 @@ dist/
 !/articles/orchestrierung/
 /articles/orchestrierung/*
 !/articles/orchestrierung/00-foreground-background-prozesse.md
+!/articles/orchestrierung/01-commands-im-background.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json
