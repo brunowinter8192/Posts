@@ -1,10 +1,8 @@
-# Wie ich Arbeit orchestriere
+# Foreground und Background Prozesse
 
 In dieser Artikelserie möchte ich darüber sprechen, wie ich Arbeit mit Agents orchestriere, und mein System und die Schwachstellen genauer beleuchten.
 
-## Das Prinzip
-
-Orchestration heißt bei mir, ein Main Agent steuert einen oder mehrere Subagents und delegiert Aufgaben. Das spart tokens und hält die attention aufrecht. Um diese 2 Kernthemen, token und attention, sollen sich die Artikel in diesem Ordner drehen.
+Orchestration heißt bei mir, ein Main Agent steuert einen oder mehrere Subagents und delegiert Aufgaben. Das spart tokens und hält die attention aufrecht. Um diese 2 Kernthemen, Context Management und attention bei der Orchestrierung, sollen sich die Artikel in diesem Ordner drehen.
 
 ## Zustände des Agents
 
