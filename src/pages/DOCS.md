@@ -43,4 +43,4 @@ Route definitions for the digital-garden layout: landing (section list) → sect
 ---
 
 ## Gotchas
-- No pagination, tags, notes, or RSS routes — dropped from the Cactus base as out of scope for the garden layout (see process-docs). Adding any of those back means adding new page files here, not resurrecting removed ones (they weren't kept, just not committed).
+- No pagination, tags, notes, or RSS routes — dropped from the Cactus base as out of scope for the garden layout. Adding any of those back means adding new page files here, not resurrecting removed ones (they weren't kept, just not committed).
