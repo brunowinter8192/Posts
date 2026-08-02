@@ -77,10 +77,6 @@ Des weiteren die Frage ob der turn auch ohne den User weiterlaufen kann. Kann de
 
 Eine Ergänzung zum ersten Teil ist die rule, dass der Agent im Zweifel selber entscheiden soll. Der erste Teil des Bias sagt also, wenn Zweifel bestehen ob es eine userkritische Entscheidung ist, dann ist es keine. Die rule ergänzt nun aber, wenn ein solcher Zweifel auftrat, dann soll er vor Ende des turns noch einmal im Chat als exchange genannt werden inklusive der Entscheidung. Das soll den Agent dazu anhalten selber zu entscheiden und ihm auch das Sicherheitsnetz mitgeben, dass der User es gegenprüfen wird.
 
-Im Terminal sieht das dann so aus.
-
-![Doubts am Ende eines turns](/Posts/images/orchestrierung/doubts-terminal.png)
-
 ## Alternativen einen Bias in Richtung autonomes Arbeiten zu legen
 
 Anthropic beschreibt in ihrer Doku folgendes Muster inklusive Lösung in Bezug auf das Modell fable 5:
@@ -101,5 +97,9 @@ Es wird hier nicht zwischen decision requiring und reiner Prozessinformation unt
 
 Dennoch war es ein interessanter Fund in der Dokumentation, der zeigt dass auch Anthropic das Legen eines Bias empfiehlt um autonomes Arbeiten zu begünstigen.
 
-Fairerweise muss man feststellen, dass auch mit meinem aktuellen Regelwerk weiterhin genau das von Anthropic beschriebene Problem auftritt. Daher werde ich hier noch weiter tunen und falls sich substanziell etwas ändert dazu nochmal was schreiben.
+Fairerweise muss man feststellen, dass auch mit meinem aktuellen Regelwerk weiterhin genau das von Anthropic beschriebene Problem auftritt. Während der Recherche für diesen Artikel, direkt nachdem wir über diese Doku-Stelle gesprochen hatten, kam prompt genau der Fall.
+
+![Turn-Ende mit einer Ankündigung statt einer Handlung](/Posts/images/orchestrierung/doubts-terminal.png)
+
+Der letzte Satz ist eine Ankündigung, "Ich gehe jetzt in die GitHub-Runde", und ausgeführt wurde sie erst nach meinem ok. Genau das "I'll…" aus dem Anthropic System-Reminder. Daher werde ich hier noch weiter tunen und falls sich substanziell etwas an den rules ändert dazu nochmal was schreiben.
 
