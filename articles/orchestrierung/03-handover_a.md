@@ -97,7 +97,7 @@ Es wird hier nicht zwischen decision requiring und reiner Prozessinformation unt
 
 Dennoch war es ein interessanter Fund in der Dokumentation, der zeigt dass auch Anthropic das Legen eines Bias empfiehlt um autonomes Arbeiten zu begünstigen.
 
-Fairerweise muss man feststellen, dass auch mit meinem aktuellen Regelwerk weiterhin genau das von Anthropic beschriebene Problem auftritt. Während der Recherche für diesen Artikel, direkt nachdem wir über diese Doku-Stelle gesprochen hatten, kam prompt genau der Fall.
+Fairerweise muss man feststellen, dass auch mit meinem aktuellen Regelwerk weiterhin genau das von Anthropic beschriebene Problem auftritt.
 
 ![Turn-Ende mit einer Ankündigung statt einer Handlung](/Posts/images/orchestrierung/doubts-terminal.png)
 
