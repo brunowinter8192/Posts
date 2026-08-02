@@ -63,8 +63,6 @@ Für den Main Agent habe ich zunächst 2 grundlegende Fälle definiert die seine
 
 Der Zweck den die exchanges also erfüllen ist zum einen den User zu informieren, zum anderen dem Agent eine Entscheidungsgrundlage zu geben auf deren Basis er einen turn beenden kann. Die Abgrenzung des decision-required exchange ist damit nicht primär ein Werkzeug für den User um schnell scannen zu können was der aktuelle Stand ist, sondern um für den Agent enger zu fassen wann er den turn beenden sollte.
 
-Wie bereits oben gesagt ist ein Informationsbedarf ein dehnbarer Begriff. Würde man das Turn-Ende auf einen einfachen exchange legen, egal welcher Art, so würde der Agent praktisch dauernd stoppen. Erst diese Erfahrung in der Praxis hat mich dazu gebracht den exchange noch einmal aufzubrechen.
-
 ## Probleme und Lösungen für den decision-required exchange
 
 Nun haben wir also schonmal eine Entscheidungshilfe. Informationsbedarf gegen Entscheidungsbedarf. Das ist schonmal eine Verschiebung von Einbeziehung des Users bei einer Prozessinformation hin zu Einbeziehung des Users bei einer Prozessentscheidung.
