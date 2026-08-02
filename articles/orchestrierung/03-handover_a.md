@@ -17,7 +17,7 @@ Anthropic definiert in ihrer Doku was ein turn ist wie folgt:
 > Assistant: [text: "The weather in Paris is 20°C and sunny"]
 > ```
 
-[Thinking](https://platform.claude.com/docs/en/build-with-claude/thinking)
+https://platform.claude.com/docs/en/build-with-claude/thinking — Stand 02.08.2026
 
 Anthropic definiert einen turn also als alles was an die API geht, beginnend beim user block und endend beim letzten block des Assistenten. Ich definiere in meinen rules für opus einen turn konzeptionell nur als das was der Assistant in Reaktion auf meine message tut.
 
@@ -33,9 +33,11 @@ Unterteilt habe ich die Bestandteile eines turns nach dem was für mich direkt s
 
 ### Action frame
 
-Ein action frame beschreibt n tool calls. In der Praxis ist der Agent in der Lage die als blockquote zu rendern, das sieht dann im Terminal so aus.
+Ein action frame beschreibt n tool calls. In der Praxis ist der Agent in der Lage die als blockquote zu rendern, das sieht dann so aus.
 
-![Action frames im Terminal](/Posts/images/orchestrierung/action-frame-terminal.png)
+> beschreibung tool use 1 2 3
+> beschreibung tool use 4 5
+> beschreibung tool use 6
 
 Sein Wert liegt darin, dass er die Handlungsbeschreibung aus den exchanges raushält und diese damit nicht verwässert.
 
@@ -87,7 +89,7 @@ Ihr Gegenmittel, ein System-Reminder für autonome Pipelines:
 
 > You are operating autonomously. The user is not watching in real time and cannot answer questions mid-task, so asking "Want me to…?" or "Shall I…?" will block the work. For reversible actions that follow from the original request, proceed without asking. Offering follow-ups after the task is done is fine; asking permission after already discussing with the user before doing the work is not. Before ending your turn, check your last paragraph. If it is a plan, an analysis, a question, a list of next steps, or a promise about work you have not done ("I'll…", "let me know when…"), do that work now with tool calls. End your turn only when the task is complete or you are blocked on input only the user can provide.
 
-[Prompting Claude Fable 5](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5)
+https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5 — Stand 02.08.2026
 
 Die Anthropic Empfehlung für fable 5 weist Parallelen zu meinem Konzept des decision-required exchanges auf.
 
