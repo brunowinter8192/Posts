@@ -65,9 +65,9 @@ Der Zweck den die exchanges also erfüllen ist zum einen den User zu informieren
 
 ## Probleme und Lösungen für den decision-required exchange
 
-Nun haben wir also schonmal eine Entscheidungshilfe. Informationsbedarf gegen Entscheidungsbedarf. Das ist schonmal eine Verschiebung von Einbeziehung des Users bei einer Prozessinformation hin zu Einbeziehung des Users bei einer Prozessentscheidung.
+Das grundlegende Problem ist, dass ein Agent den turn zu schnell beendet. Im letzten Abschnitt wurde daher eine Entscheidungshilfe definiert wann der turn zu beenden ist: Nur wenn eine User-Entscheidung notwendig ist.
 
-Jetzt habe ich das Problem der vorzeitigen Turn-Beendung aber nur verlagert. Entscheidungsbedarf ist ebenfalls ein dehnbarer Begriff. Ziehe ich hier keinen Bias ein, so wird der Agent, opus 5 in meinem Fall, zuverlässig Dinge als User-Entscheidung klassifizieren die mit dem Prozess wenig und mit der Implementierung viel zu tun haben.
+Damit habe ich das Problem aber nur verlagert. Entscheidungsbedarf ist ebenfalls ein dehnbarer Begriff. Ziehe ich hier keinen Bias ein, so wird der Agent, opus 5 in meinem Fall, zuverlässig Dinge als User-Entscheidung klassifizieren die mit dem Prozess wenig und mit der Implementierung viel zu tun haben.
 
 Es soll also noch stärker in Richtung Autonomie des Agents gedrückt werden.
 
@@ -75,9 +75,9 @@ Der Bias besteht bei mir aus mehreren Teilen. Zunächst, wenn der Agent sich fra
 
 Des weiteren die Frage ob der turn auch ohne den User weiterlaufen kann. Kann der turn auch ohne den User weiterlaufen oder sind alle offenen Aktionen durch die User-Entscheidung blockiert. Der Agent soll erst stoppen wenn wirklich alles an der User-Entscheidung hängt.
 
-Eine Ergänzung zum ersten Teil ist die rule, dass der Agent im Zweifel selber entscheiden soll. Der erste Teil des Bias sagt also, wenn Zweifel bestehen ob es eine userkritische Entscheidung ist, dann ist es keine. Die rule ergänzt nun aber, wenn ein solcher Zweifel auftrat, dann soll er vor Ende des turns noch einmal im Chat als exchange genannt werden inklusive der Entscheidung. Das soll den Agent dazu anhalten selber zu entscheiden und ihm auch das Sicherheitsnetz mitgeben, dass der User es gegenprüfen wird.
+Eine Ergänzung zum ersten Teil ist die rule, dass der Agent im Zweifel selber entscheiden soll. Der erste Teil des Bias sagt also, wenn Zweifel bestehen ob es eine userkritische Entscheidung ist, dann ist es keine. Die rule ergänzt, wenn ein solcher Zweifel auftrat, dann soll er vor Ende des turns noch einmal im Chat als exchange genannt werden inklusive der Entscheidung. Das soll den Agent dazu anhalten selber zu entscheiden und ihm auch das Sicherheitsnetz mitgeben, dass der User es gegenprüfen wird.
 
-## Alternativen einen Bias in Richtung autonomes Arbeiten zu legen
+## Alternativen, einen Bias in Richtung autonomes Arbeiten zu legen
 
 Anthropic beschreibt in ihrer Doku folgendes Muster inklusive Lösung in Bezug auf das Modell fable 5:
 
