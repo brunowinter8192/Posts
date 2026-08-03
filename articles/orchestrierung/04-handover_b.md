@@ -3,11 +3,11 @@
 [Wie kann man den Handover zwischen Main Agent und User, aber auch zwischen Worker und Main Agent beeinflussen? Welche rules kann man setzen und wie erzeugt man einen Bias in eine bestimmte Richtung?](https://brunowinter8192.github.io/Posts/orchestrierung/02-mechanik-der-orchestrierung/)
 
 ## Thema
-Kurzer Recap zum Artikel handover A. Ein handover ist immer die Übergabe von der ausführenden an die steuernde Partei. Er erfolgt immer am Ende eines turns. Wie ich einen turn definiere habe ich geklärt.
+Kurzer Recap zum Artikel handover A. Ein handover ist immer die Übergabe von der ausführenden an die steuernde Partei. Er erfolgt immer am Ende eines turns. Wie ich einen turn definiere habe ich in Handover A geklärt.
 
-Im Laufe des Artikels A wurde schnell klar, dass sich alles auf den Austausch zwischen Main Agent und User fokussiert:
+Im Laufe des Artikels A wurde schnell klar, dass sich der Inhalt des Artikels auf den Austausch zwischen Main Agent und User fokussiert:
 
-Der trigger für den handover als decision-required exchange und die Form des handovers nur definiert durch das Emote, welches den decision-required exchange kennzeichnet. Die Abgrenzung, dass ein turn auch enden kann wenn ein timer für einen Worker gesetzt wird, ohne dass ein handover erfolgt.
+Der trigger für den handover als decision-required exchange und die Form des handovers nur definiert durch das Emote, welches den decision-required exchange kennzeichnet. Die Abgrenzung, dass ein turn auch enden kann wenn ein timer für einen Worker gesetzt wird, ohne dass ein handover an den User erfolgt.
 
 Es wurde also der handover Worker zu Main Agent bisher noch gar nicht beleuchtet. Darum sollen sich die folgenden Abschnitte drehen.
 
@@ -27,6 +27,7 @@ COMPLETION CHECKLIST:
 Die items schreibt der Main Agent pro Aufgabe in den Worker-Prompt. Das template gibt den Rahmen vor und dazu die Anforderung, dass die Ergebnisse konkret sein müssen, also Dateipfade, Zahlen, konkrete Werte statt "done" oder "verified".
 
 Die rules für den Main Agent, welche die Anforderung zur Completion Checklist im Worker-Prompt tragen: [`opus/workers.md`](https://github.com/brunowinter8192/GlobalRules/blob/main/opus/workers.md)
+
 Die rules für den Worker, welche die Form der Completion Checklist tragen: [`worker/worker-rules.md`](https://github.com/brunowinter8192/GlobalRules/blob/main/worker/worker-rules.md)
 
 ## Ausnahmen des Handover Triggers bei Worker zu Main
@@ -57,7 +58,7 @@ Die Ausnahmen sind in den folgenden Abschnitten der rules reflektiert
 
 ## Zusammenfassung
 
-Die handovers Main zu User und Worker zu Main lassen sich also über zwei Dinge abgrenzen, über ihren trigger und über ihre Form.
+Die handovers Main zu User und Worker zu Main lassen sich also über ihren trigger und ihre Form abgrenzen.
 
 Der trigger beim handover Main zu User ist ein decision-required exchange. Der trigger beim handover Worker zu Main ist die Beendigung der Aufgabe oder eine der Ausnahmen. Bei beiden ist das Ende eines turns nicht automatisch ein handover. Der Main Agent wie auch der Worker können ans context limit geraten und den turn beenden, der Main kann zusätzlich einen timer für den Worker stellen und den turn damit ohne handover beenden.
 
