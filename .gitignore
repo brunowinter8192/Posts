@@ -28,6 +28,7 @@ dist/
 !/articles/orchestrierung/01-commands-im-background.md
 !/articles/orchestrierung/02-mechanik-der-orchestrierung.md
 !/articles/orchestrierung/03-handover_a.md
+!/articles/orchestrierung/04-handover_b.md
 
 # --- Astro/Cactus site scaffold (public) ---
 !/package.json
