@@ -58,7 +58,7 @@ Die Ausnahmen sind in den folgenden Abschnitten der rules reflektiert
 
 ## Zusammenfassung
 
-Die handovers Main zu User und Worker zu Main lassen sich also über ihren trigger und ihre Form abgrenzen.
+Die handovers Main zu User und Worker zu Main lassen sich über ihren trigger und ihre form abgrenzen.
 
 Der trigger beim handover Main zu User ist ein decision-required exchange. Der trigger beim handover Worker zu Main ist die Beendigung der Aufgabe oder eine der Ausnahmen. Bei beiden ist das Ende eines turns nicht automatisch ein handover. Der Main Agent wie auch der Worker können ans context limit geraten und den turn beenden, der Main kann zusätzlich einen timer für den Worker stellen und den turn damit ohne handover beenden.
 
