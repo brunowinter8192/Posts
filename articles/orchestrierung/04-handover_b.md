@@ -1,6 +1,6 @@
 # Handover B
 
-[Wie sieht der Handover selbst aus, Worker zu Main Agent und Main Agent zu User?](https://brunowinter8192.github.io/Posts/orchestrierung/03-handover_a/)
+[Wie kann man den Handover zwischen Main Agent und User, aber auch zwischen Worker und Main Agent beeinflussen? Welche rules kann man setzen und wie erzeugt man einen Bias in eine bestimmte Richtung?](https://brunowinter8192.github.io/Posts/orchestrierung/02-mechanik-der-orchestrierung/)
 
 ## Thema
 Kurzer Recap zum Artikel handover A. Ein handover ist immer die Übergabe von der ausführenden an die steuernde Partei. Er erfolgt immer am Ende eines turns. Wie ich einen turn definiere habe ich geklärt.
